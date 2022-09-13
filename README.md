@@ -11,7 +11,7 @@
 
 ### Run Flashcard app
 
-`php artisan console:interactive`
+`php artisan flashcard:interactive`
 
 ### Run tests
 
