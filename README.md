@@ -1,1 +1,1 @@
-# studocu
+#studocu
