@@ -11,9 +11,7 @@ jobs:
         image: mysql:8.0
         env:
           MYSQL_ROOT_PASSWORD: password
-          MYSQL_USER: default
-          MYSQL_DATABASE: default
-          MYSQL_ALLOW_EMPTY_PASSWORD: 1
+          MYSQL_DATABASE: test
         ports:
           - 33306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
