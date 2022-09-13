@@ -34,25 +34,15 @@ class FlashcardCommand extends Command
     protected $description = 'Command description';
 
     /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->style = new MenuStyle();
-        $this->style->setBg('black');
-    }
-
-    /**
      * Execute the console command.
      *
      * @return int
      */
     public function handle($continuePractice = false)
     {
+        $this->style = new MenuStyle();
+        $this->style->setBg('black');
+
         $menuBuilder = new CliMenuBuilder();
 
         $menuBuilder->setTitle('Flashcard App');
