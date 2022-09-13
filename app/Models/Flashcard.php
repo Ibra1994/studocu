@@ -33,8 +33,8 @@ class Flashcard extends Model
     public static function getRules(): array
     {
         return [
-            'question' => 'required|string|min:1|max:255',
-            'answer' => 'required|string|min:1|max:255',
+            'question' => 'sometimes|required|string|min:1|max:255',
+            'answer' => 'sometimes|required|string|min:1|max:255',
         ];
     }
 }
